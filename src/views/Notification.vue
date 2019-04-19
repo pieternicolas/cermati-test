@@ -2,7 +2,7 @@
   <div class="notification">
     <container>
       <p>By accessing and using this website, you acknowledge that you have read and understand our <a href="">Cookie Policy</a>, <a href="">Privacy Policy</a>, and our <a href="">Terms of Service</a>.</p>
-      <basic-button class="notification-btn">Got it</basic-button>
+      <basic-button class="notification-btn" color="#1678C2">Got it</basic-button>
     </container>
   </div>
 </template>
