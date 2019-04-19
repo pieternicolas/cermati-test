@@ -1,27 +1,34 @@
 <template>
   <div id="app">
-    <Layout></Layout>
+    <Layout>
+      <Notification slot="notification"/>
+    </Layout>
   </div>
 </template>
 
 <script>
 import Layout from '@/components/Layout'
 
+import Notification from '@/views/Notification'
+
 export default {
   name: 'app',
   components: {
-    Layout
+    Layout,
+    Notification
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 </style>
