@@ -35,6 +35,7 @@ export default {
 <style lang="scss" scoped>
 .notification {
   position: sticky;
+  top: 0;
   width: 100%;
   background-color: #F1F1F1;
   .container {
