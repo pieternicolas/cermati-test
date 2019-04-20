@@ -4,13 +4,22 @@
       <h2>Get latest updates in web technologies</h2>
       <p>I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.</p>
       <span class="close" @click="closePanel">x</span>
+      <form class="inline-form" @submit.prevent="closePanel">
+        <input type="email" class="input-form" placeholder="Email address">
+        <basic-button :color="'#ff8000'" @click.native="closePanel" class="submit-button">Count me in!</basic-button>
+      </form>
     </div>
   </transition>
 </template>
 
 <script>
+import Button from '@/components/Button'
+
 export default {
   name: 'Newsletter',
+  components: {
+    'basic-button': Button
+  },
   data() {
     return {
       scrollPastThird: false,
@@ -74,6 +83,35 @@ export default {
   right: 0.5rem;
   &:hover {
     cursor: pointer;
+  }
+}
+
+.inline-form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-top: 1rem;
+  .input-form {
+    flex: 1 1 auto;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.4rem 0.5rem;
+    margin-right: 1rem;
+  }
+  @media screen and (max-width: 639.99px) {
+    .input-form {
+      width: 100%;
+      margin-right: 0;
+    }
+    .submit-button {
+      width: 100%;
+      margin-top: 0.5em;
+    }
   }
 }
 
