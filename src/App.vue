@@ -2,6 +2,8 @@
   <div id="app">
     <Layout>
       <Notification slot="notification"/>
+
+      <Hero/>
     </Layout>
   </div>
 </template>
@@ -10,12 +12,14 @@
 import Layout from '@/components/Layout'
 
 import Notification from '@/views/Notification'
+import Hero from '@/views/Hero'
 
 export default {
   name: 'app',
   components: {
     Layout,
-    Notification
+    Notification,
+    Hero
   }
 }
 </script>

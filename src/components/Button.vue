@@ -42,7 +42,6 @@ export default {
 <style lang="scss" scoped>
 button {
   display: inline-block;
-  font-weight: 400;
   text-align: center;
   vertical-align: middle;
   border-width: 1px;
