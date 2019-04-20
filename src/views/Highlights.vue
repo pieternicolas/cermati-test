@@ -36,7 +36,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  background-color: #E6E4E6;
+  background-color: #E5E5E5;
   color: #37363F;
 }
 h1, p {

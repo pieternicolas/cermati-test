@@ -37,7 +37,7 @@ export default {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 55, 95, 0.7), rgba(0, 55, 95, 0.7)),
+  background-image: linear-gradient(rgba(0, 74, 117, 0.7), rgba(0, 74, 117, 0.7)),
                     url('~@/assets/img/work-desk__dustin-lee.jpg');
   background-size: cover;
   .logo {
