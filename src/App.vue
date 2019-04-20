@@ -4,6 +4,8 @@
       <Notification slot="notification"/>
 
       <Hero/>
+
+      <Highlights/>
     </Layout>
   </div>
 </template>
@@ -13,18 +15,22 @@ import Layout from '@/components/Layout'
 
 import Notification from '@/views/Notification'
 import Hero from '@/views/Hero'
+import Highlights from '@/views/Highlights'
 
 export default {
   name: 'app',
   components: {
     Layout,
     Notification,
-    Hero
+    Hero,
+    Highlights
   }
 }
 </script>
 
 <style lang="scss">
+@import 'https://use.fontawesome.com/releases/v5.8.1/css/all.css';
+
 html, body {
   margin: 0;
   padding: 0;
