@@ -15,6 +15,12 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 0.5em;
+    width: 100%;
+    @media screen and (min-width: 1366px) {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 1366px;
+    }
   }
 }
 </style>

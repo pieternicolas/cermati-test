@@ -65,6 +65,7 @@ export default {
     max-width: 720px;
   }
   .hero-content {
+    margin: 0 auto;
     padding: 0 1em;
     text-align: center;
   }
