@@ -1,13 +1,15 @@
 <template>
   <transition name="slide">
-    <div class="newsletter" v-if="isShown">
-      <h2>Get latest updates in web technologies</h2>
-      <p>I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.</p>
-      <span class="close" @click="closePanel">x</span>
-      <form class="inline-form" @submit.prevent="closePanel">
-        <input type="email" class="input-form" placeholder="Email address">
-        <basic-button :color="'#ff8000'" @click.native="closePanel" class="submit-button">Count me in!</basic-button>
-      </form>
+    <div class="newsletter-container">
+      <div class="newsletter" v-if="isShown">
+        <h2>Get latest updates in web technologies</h2>
+        <p>I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.</p>
+        <span class="close" @click="closePanel">x</span>
+        <form class="inline-form" @submit.prevent="closePanel">
+          <input type="email" class="input-form" placeholder="Email address">
+          <basic-button :color="'#ff8000'" @click.native="closePanel" class="submit-button">Count me in!</basic-button>
+        </form>
+      </div>
     </div>
   </transition>
 </template>
@@ -60,10 +62,14 @@ export default {
 
 
 <style lang="scss" scoped>
+.newsletter-container {
+  position: relative;
+  clear: both;
+}
+
 .newsletter {
   position: fixed;
   bottom: 0;
-  left: 0;
   background-color: rgba(0, 123, 191, 0.8);
   color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
