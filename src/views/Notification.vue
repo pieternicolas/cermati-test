@@ -36,6 +36,7 @@ export default {
 .notification {
   position: sticky;
   top: 0;
+  z-index: 5;
   width: 100%;
   background-color: #F1F1F1;
   .container {
