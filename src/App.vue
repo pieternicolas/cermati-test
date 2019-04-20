@@ -5,6 +5,7 @@
       <hero/>
       <highlights/>
       <page-footer slot="footer"/>
+      <newsletter slot="newsletter"/>
     </layout>
   </div>
 </template>
@@ -16,6 +17,7 @@ import Notification from '@/views/Notification'
 import Hero from '@/views/Hero'
 import Highlights from '@/views/Highlights'
 import PageFooter from '@/views/PageFooter'
+import Newsletter from '@/views/Newsletter'
 
 export default {
   name: 'app',
@@ -24,7 +26,8 @@ export default {
     Notification,
     Hero,
     Highlights,
-    PageFooter
+    PageFooter,
+    Newsletter
   }
 }
 </script>
