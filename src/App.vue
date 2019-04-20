@@ -28,6 +28,9 @@ export default {
     Highlights,
     PageFooter,
     Newsletter
+  },
+  created() {
+    document.title = `​${this.$name} | Cermati.com Front-end Developer Entry Test`
   }
 }
 </script>
