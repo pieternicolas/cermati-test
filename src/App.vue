@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-    <Layout>
-      <Notification slot="notification"/>
-
-      <Hero/>
-
-      <Highlights/>
-    </Layout>
+    <layout>
+      <notification slot="notification"/>
+      <hero/>
+      <highlights/>
+      <page-footer slot="footer"/>
+    </layout>
   </div>
 </template>
 
@@ -16,6 +15,7 @@ import Layout from '@/components/Layout'
 import Notification from '@/views/Notification'
 import Hero from '@/views/Hero'
 import Highlights from '@/views/Highlights'
+import PageFooter from '@/views/PageFooter'
 
 export default {
   name: 'app',
@@ -23,7 +23,8 @@ export default {
     Layout,
     Notification,
     Hero,
-    Highlights
+    Highlights,
+    PageFooter
   }
 }
 </script>
